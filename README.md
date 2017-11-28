@@ -1,4 +1,4 @@
-# video captioning
+# Video captioning
 
 Source code for Video Captioning
 
