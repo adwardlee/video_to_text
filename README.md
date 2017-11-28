@@ -12,8 +12,12 @@ Source code for Video Captioning
 * [MSR-VTT](http://ms-multimedia-challenge.com/2016/dataset)
 
 ## Preprocess data
+### 1. Extract all frames from videos
+It needs to extract the frames by using `cpu_extract.py`. Then use `read_certrain_number_frame.py` to uniformly sample 5 frames from all frames of a video. At last use the `tf_feature_extract.py` to extract the inception-resnet-v2 features of frame.
 
-It needs to decompose the videos to frames by using `cpu_extract.py`. Then use the `tf_feature_extract.py` to extract the inception-resnet-v2 features of frame.
+### 2.Run model
+
+### 3. Evaluate
 
  
 ```
