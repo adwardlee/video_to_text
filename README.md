@@ -16,9 +16,9 @@ Source code for Video Captioning
 It needs to extract the frames by using `cpu_extract.py`. Then use `read_certrain_number_frame.py` to uniformly sample 5 frames from all frames of a video. At last use the `tf_feature_extract.py` to extract the inception-resnet-v2 features of frame.
 
 ### 2.Evaluate models
-use the `*_s2vt.py`, for example,
+use the `*_s2vt.py`. Before that, it needs to change the model path of evaluation function and some global parameters in the file. For example,
 ```
-python tf_s2vt.py --gpu 0 --task evaluate. Before that, it needs to change the model path
+python tf_s2vt.py --gpu 0 --task evaluate
 ```
 
 The MSVD models can be downloaded from [here](https://drive.google.com/open?id=199se09ycy1nMF7tCs9R1J-lIA1sHKcHi)
