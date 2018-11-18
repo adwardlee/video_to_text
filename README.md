@@ -26,3 +26,17 @@ The MSR-VTT models can be downloaded from [here](https://drive.google.com/open?i
 
 These processes are a little complicated, please feel free to ask me if you have some questions.
 
+## Training from scratch
+for example msvd dataset:
+### step1
+```
+python tf_s2vt.py --gpu 0 --task train
+```
+### step2
+```
+python reinforcement_multisampling_tf_s2vt.py --task  train
+```
+### step3
+```
+python reinforce_multitask_e2e_attribute_s2vt.py --task train
+```
