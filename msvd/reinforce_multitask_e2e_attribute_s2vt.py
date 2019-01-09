@@ -308,7 +308,7 @@ word_dim = 500
 
 n_lstm_step = 45
 n_caption_lstm_step = 35
-n_video_lstm_step = 10
+n_video_lstm_step = 5
 
 n_epochs = 40
 batch_size = 2
@@ -481,8 +481,8 @@ def evaluation(model_path='/home/llj/tensorflow_s2vt/reinforcement_multitask_mod
     #saver.restore(sess, model_path_last)
 
     with open('reinforcement_multitask_models/groundtruth_greedy.txt', 'w') as f:
-      for i in xrange(1500, 87000, 1500):
-        model_path_last = model_path + '10batch_size2reinforce_multitask_model_lambda0_greedy_groundtruth-' + str(i)
+      #for i in xrange(1500, 87000, 1500):
+        model_path_last = model_path + '10batch_size2reinforce_multitask_model_lambda0_greedy_groundtruth-23333'# + str(i)
         saver.restore(sess, model_path_last)
         all_decoded_for_eval = {}
         test_index = list(range(len(test_captions)))
